@@ -1,0 +1,19 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "Simple page of a restaurant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavobastian/restaurant.git"
+  },
+  "author": "Gustavo Bastian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavobastian/restaurant/issues"
+  },
+  "homepage": "https://github.com/gustavobastian/restaurant#readme"
+}
