@@ -1,3 +1,18 @@
+*{
+    font-family: sans-serif;    
+}
+body{    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.mainContent{
+    display:flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    background: rgb(133, 167, 128);    
+}
 img{
     width: 50%;
     display: flex;
@@ -9,4 +24,95 @@ h1{
     color:blue;
     text-align: center;
     font-size: 48px;
+}
+header{
+    display: grid;
+    background: rgb(133, 167, 128);
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 50% 50%;
+    height: auto;
+    text-align: center;
+}
+.titleClass{
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    font-weight: bold;
+    align-items: center;
+}
+
+.navBarClass{
+    display: flex;
+    justify-content: space-around;  
+    padding-top: 1%;  
+    border-width: 1px;   
+    background-color: transparent; 
+    border-radius: 16px;
+    margin-bottom: 10px;
+    height: 35px;
+}
+.navBarText{
+    display: flex;
+    justify-content: space-around;      
+    color:blue;
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-bottom: 3px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 1px;
+    font-size: 15px;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 15px ; 
+    background: gold;
+    box-shadow: 0px 0px 10px black;
+    width: 80%;
+}
+.navBarText:hover{
+    display: flex;
+    justify-content: space-around;      
+    color:blue;    
+    margin-top: 1px;
+    font-size: smaller;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 15px ; 
+    background: rgb(100, 91, 36);
+    width: 80%;
+}
+.centerImage{
+    display: flex;
+    justify-content: space-around;          
+    margin-top: 10px;
+    font-size: 15px;    
+    width: 100%;
+    
+}
+.textBottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;          
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    width: 50%;    
+    padding-left: 25%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.textFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;          
+    align-items: center;
+    text-align: center;
+    font-size: 16px;    
+    margin-top: auto;
+    background: rgb(47, 105, 105);
+}
+.textMenu{
+    display:flex;
+    width: 25%;
 }
