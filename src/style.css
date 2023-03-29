@@ -17,6 +17,7 @@ body{
 }
 img{
     width: 40%;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
@@ -120,8 +121,9 @@ header{
     margin-right: 15%;
     margin-left: 15%;
     border-radius: 15px;
-    width: 50%;
+    width: 400px;
     box-shadow: 0px 0px 15px black;
+
 }
 
 .textMenu{
@@ -145,4 +147,11 @@ header{
     font-size: 20px;
     font-weight: bold;
     font-family: sans-serif;
+}
+.allMenu{
+    display:grid;    
+    resize: both;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto ;
+    
 }

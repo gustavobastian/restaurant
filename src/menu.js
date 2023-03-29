@@ -6,7 +6,7 @@ import glass_water from './glass_water.jpg';
 const menuComp= ()=>{    
     console.log("here")
     const allcontentElement = document.createElement('div');
-
+    allcontentElement.className="allMenu";
     //menu 1 choripan
     const contentCard=document.createElement('div');
     contentCard.className="menu";
