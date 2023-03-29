@@ -137,3 +137,8 @@ header{
     margin-left: 10px;
     margin-right: 10px;
 }
+.textContact{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
