@@ -12,7 +12,7 @@ const contactComp= ()=>{
         const contentElement = document.createElement('div');                
         let textElement = document.createElement('div');
         textElement.className = "textContact";
-        let snippet3 = document.createTextNode("for contact, send email to: juanito@juanito-rest.com");
+        let snippet3 = document.createTextNode("For more information, send email to: juanito@juanito-rest.com");
         textElement.appendChild(snippet3);
         contentElement.appendChild(textElement);
 
