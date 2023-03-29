@@ -11,7 +11,7 @@ const menuComp= ()=>{
     const contentCard=document.createElement('div');
     contentCard.className="menu";
     const contentElement = document.createElement('div');
-    contentElement.style.cssText="display:flex;flex-direction:row;justify-content:space-between;"
+    contentElement.style.cssText="display:flex;flex-direction:row;justify-content:space-around;"
     let imgContent = document.createElement('div');
     imgContent.className = "menuImage";
     let imgElement = new Image();
