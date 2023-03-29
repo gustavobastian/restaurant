@@ -67,6 +67,7 @@ function component(){
     ///dinamic content
     let dinamicContentElement=document.createElement('div') 
     dinamicContentElement.id="dinamicContent";
+    dinamicContentElement.className="dinamicContent"
     let homeEl = homeComp();//initial page home
     dinamicContentElement.appendChild(homeEl);
     contentElement.appendChild(dinamicContentElement);

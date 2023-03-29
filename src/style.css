@@ -7,13 +7,15 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-image: linear-gradient(rgb(89, 77, 255),rgb(255, 222, 101));
+
 }
 .mainContent{
     display:flex;
     min-height: 100vh;
     flex-direction: column;
     justify-content: space-around;
-    background: rgb(133, 167, 128);    
+    
 }
 img{
     width: 40%;
@@ -30,7 +32,7 @@ h1{
 }
 header{
     display: grid;
-    background: rgb(133, 167, 128);
+    background: transparent;
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 50% 50%;
     height: auto;
@@ -95,7 +97,7 @@ header{
     justify-content: space-around;          
     align-items: center;
     text-align: center;
-    font-size: 16px;
+    font-size: 25px;
     width: 50%;    
     padding-left: 25%;
     margin-top: 25px;
@@ -110,7 +112,7 @@ header{
     font-size: 20px;    
     margin-top: auto;
     padding-top: 20px;
-    background: rgb(47, 105, 105);
+    background: transparent;
 }
 
 .menu{
@@ -153,4 +155,7 @@ header{
     flex-direction: row;
     flex-wrap: wrap;    
     
+}
+.dinamicContent{
+    background:transparent;
 }
