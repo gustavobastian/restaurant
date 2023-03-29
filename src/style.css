@@ -1,6 +1,8 @@
 *{
     font-family: sans-serif;    
 }
+
+
 body{    
     min-height: 100vh;
     display: flex;
@@ -84,8 +86,7 @@ header{
     justify-content: space-around;          
     margin-top: 10px;
     font-size: 15px;    
-    width: 100%;
-    
+    width: 100%;    
 }
 .textBottom{
     display: flex;
@@ -133,6 +134,13 @@ header{
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
+}
+.menuImage{
+    display: flex;
+    justify-content: space-around;          
+    margin-top: 10px;
+    font-size: 15px;    
+    width: 200px;    
 }
 .textContact{
     font-size: 20px;

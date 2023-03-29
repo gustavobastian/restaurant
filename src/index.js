@@ -76,7 +76,7 @@ function component(){
 
     let footerContent=document.createElement('div');
     footerContent.className="textFooter";
-    let snippetFooter = document.createTextNode("All images from Wikimedia Commons (Simon Burchell,Finn McMissile,stu_spivack)");       
+    let snippetFooter = document.createTextNode("All images from Wikimedia Commons (Simon Burchell,Finn McMissile,stu_spivack,Susan Slater)");       
     footerContent.appendChild(snippetFooter);
     contentElement.appendChild(footerContent);
 
