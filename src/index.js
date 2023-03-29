@@ -25,18 +25,21 @@ function component(){
 
     let navBarL=document.createElement('div');
     let snippetL = document.createTextNode("Home");
-    navBarL.className="navBarText";
+    navBarL.className="navBarText";    
     navBarL.appendChild(snippetL)
+    navBarL.addEventListener("click",onLeft)
 
     let navBarR=document.createElement('div');
     let snippetR = document.createTextNode("Contact");
     navBarR.className="navBarText";
     navBarR.appendChild(snippetR)
+    navBarR.addEventListener("click",onRight)
     
     let navBarC=document.createElement('div');
     let snippetC = document.createTextNode("Menu");
     navBarC.appendChild(snippetC)
     navBarC.className="navBarText";
+    navBarC.addEventListener("click",onCenter)
 
     navBarClass.appendChild(navBarL);
     navBarClass.appendChild(navBarC);
@@ -62,12 +65,12 @@ function component(){
     contentElement.appendChild(contactContent);
 
     ///dinamic content
-    let homeEl = homeComp();
-    contentElement.appendChild(homeEl);
-    let menuEl = menuComp();
-    contentElement.appendChild(menuEl);
-    let contactEl = contactComp();
-    contentElement.appendChild(contactEl);
+    let dinamicContentElement=document.createElement('div') 
+    dinamicContentElement.id="dinamicContent";
+    let homeEl = homeComp();//initial page home
+    dinamicContentElement.appendChild(homeEl);
+    contentElement.appendChild(dinamicContentElement);
+
 
     //generating footer
 
@@ -78,6 +81,31 @@ function component(){
     contentElement.appendChild(footerContent);
 
     return contentElement;
+}
+
+function onLeft() {
+    console.log("Left Cliked");
+    let element=document.getElementById("dinamicContent");
+    element.innerHTML=" ";
+    let homeEl = homeComp();
+    element.appendChild(homeEl);
+    
+}
+function onRight() {
+    console.log("Right Cliked");
+    let element=document.getElementById("dinamicContent");
+    element.innerHTML=" ";    
+    let contactEl = contactComp();
+    element.appendChild(contactEl);
+    
+}
+function onCenter() {
+    console.log("Center Cliked");
+    let element=document.getElementById("dinamicContent");
+    element.innerHTML=" ";        
+    
+    let menuEl = menuComp();
+    element.appendChild(menuEl);    
 }
 document.body.appendChild(component());
 
