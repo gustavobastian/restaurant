@@ -46,7 +46,7 @@ function component(){
     navBarClass.appendChild(navBarR);
 
     let navBar= document.createElement('div'); 
-    let snippetLocal = document.createTextNode("Restaurant Juanito");
+    let snippetLocal = document.createTextNode("JUANITO's Restaurant");
     navBar.appendChild(snippetLocal);
     navBar.className="titleClass";
     headerElement.appendChild(headerDiv);
