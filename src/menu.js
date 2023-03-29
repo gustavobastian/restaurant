@@ -5,7 +5,9 @@ import Caesar_salad from './Caesar_salad.jpg';
 const menuComp= ()=>{    
     console.log("here")
     const allcontentElement = document.createElement('div');
-
+    const contentCard=document.createElement('div');
+    contentCard.className="menu";
+    
     const contentElement = document.createElement('div');
     contentElement.style.cssText="display:flex;flex-direction:row;justify-content:space-between;"
     let imgContent = document.createElement('div');
@@ -27,6 +29,8 @@ const menuComp= ()=>{
     textElement2.appendChild(snippet3);
     contentElement.appendChild(textElement2);
 
+    const contentCard2=document.createElement('div');
+    contentCard2.className="menu";
 
     const contentElement2 = document.createElement('div');
     contentElement2.style.cssText="display:flex;flex-direction:row;justify-content:space-between;"
@@ -38,7 +42,7 @@ const menuComp= ()=>{
     imgContent3c.appendChild(imgElement3c);
     contentElement2.appendChild(imgContent3c);
     let textElementC = document.createElement('div');
-    textElement.className = "textMenu";
+    textElementC.className = "textMenu";
     let snippetC = document.createTextNode("The Caesar salad is light. ");
     textElementC.appendChild(snippetC);
     contentElement2.appendChild(textElementC);
@@ -49,9 +53,11 @@ const menuComp= ()=>{
     textElement2C.appendChild(snippet3C);
     contentElement2.appendChild(textElement2C);
 
-
-    allcontentElement.appendChild(contentElement);
-    allcontentElement.appendChild(contentElement2);
+    //add cards
+    contentCard.appendChild(contentElement);
+    contentCard2.appendChild(contentElement2)
+    allcontentElement.appendChild(contentCard);
+    allcontentElement.appendChild(contentCard2);
     
     return allcontentElement;    
 }

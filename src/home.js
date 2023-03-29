@@ -14,7 +14,7 @@ const homeComp= ()=>{
         contentElement.appendChild(imgContent);
         let textElement = document.createElement('div');
         textElement.className = "textBottom";
-        let snippet2 = document.createTextNode("A very special place with good music, relax and excellent food! Ideal for a good moment!");
+        let snippet2 = document.createTextNode("A very special place with low volume music, relax and excellent food! Ideal for a good moment!");
         textElement.appendChild(snippet2);
         contentElement.appendChild(textElement);
         return contentElement;    
