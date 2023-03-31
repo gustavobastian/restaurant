@@ -1,0 +1,9 @@
+ [
+    {"name":"pizza","text":"cheese, tomato,","img":"" ,"price":20 },
+    {"name":"Spagetti","text":"Italian pasta","img":"" ,"price":7 },
+    {"name":"choripan","text":"The choripan is a sandwich from Argentina. ","img":"choripan", "price":10  },
+    {"name":"Caesar salad","text":"The Caesar salad is light.","img":"choripan", "price":8  },
+    {"name":"Empanada","text":"Argentine traditional food","img":"empanada", "price":4  },
+    {"name":"Wine","text":"Bottle of white wine (ideal for pasta) ","img":"wine", "price":11}
+    
+]

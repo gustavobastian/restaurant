@@ -14,7 +14,7 @@ module.exports = {
     }
     ,
     menu:{
-      import:'./src/menu.js',
+      import:'./src/menu.js',      
     },
     contact:{
       import:'./src/contact.js',
@@ -31,7 +31,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
-    rules: [
+    rules: [      
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
@@ -39,7 +39,7 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
-      },
-    ],
+      }      
+    ]
   },
 };
